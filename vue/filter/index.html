@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <title>exercise</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="app">
+            <input v-model.number="budget"> 円以下に絞り込む
+            <input v-model.number="limit"> 件表示
+            <button v-on:click="order!=order">change order</button>
+            <p>{{ matched.length }}件中{{ limited.length }}件を表示</p>
+            <ul>
+                <li v-for="item in orderBy(limited, 'price')" v-bind:key="item.id">
+                    {{ item.name }} {{item.price}}円
+                </li>
+            </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

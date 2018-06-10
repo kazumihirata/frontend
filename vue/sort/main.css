@@ -1,0 +1,16 @@
+table {
+  th {
+    cursor: pointer;
+
+    &.sorted {
+      &.asc::after {
+        display: inline-block;
+        content: '▼';
+      }
+      &.desc::after {
+        display: inline-block;
+        content: '▲';
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <title>exercise</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="app">
+            <table>
+                <thead>
+                    <tr>
+                        <th :class="sortedClass('id')" @click="sortBy('id')">ID</th>
+                        <th :class="sortedClass('name')" @click="sortBy('name')">NAME</th>
+                        <th :class="sortedClass('age')" @click="sortBy('age')">AGE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="item in sortedItems" :key="item.id">
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.age }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
