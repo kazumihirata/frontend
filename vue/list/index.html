@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <title>exercise</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="app">
+            name <input v-model="name">
+            <button v-on:click="doAdd">add name</button>
+            <ul>
+                <!-- <li v-for="item in list" v-bind:key="item.id">
+                    ID.{{ item.id }} {{ item.name}} HP. {{ item.hp }}
+                </li> -->
+                <li v-for="(item, index) in list" v-bind:key="item.id">
+                    ID:{{ item.id }} NAME: {{ item.name }} HP: {{ item.hp }}
+                    <span v-if="item.hp > 300">strong!</span>
+                    <button v-on:click="doRemove(index)">remove</button>
+                </li>
+            </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

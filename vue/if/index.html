@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <title>exercise</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="app">
+            <!-- <div v-if="ok">v-if条件での描画</div>
+            <div v-show="ok">v-show条件での描画</div> -->
+
+            <!-- <template v-if="ok">
+                <header>
+                    title
+                </header>
+                <div>
+                    contents
+                </div> -->
+
+                <div v-if="type === 'A'">
+                    type is A.
+                </div>
+                <div v-else-if="type === 'B'">
+                    type is B.
+                </div>
+                <div v-else>
+                    it doesnt match.
+                </div>
+            </template>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

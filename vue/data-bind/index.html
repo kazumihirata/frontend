@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <title>exercise</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="app">
+            <p>{{ message.value }}</p>
+            <p>{{ message.value.length }}</p>
+            <p>{{ list[2] }}</p>
+            <p>{{ list[num] }}</p>
+            <p>{{ 1 + 1 }}</p>
+            <p>{{ message.length >= 10 ? '10文字以上' : '10文字未満'}}</p>
+            <!-- NG -->
+            <!-- <input type="text" value="{{ message }}"> -->
+            <!-- OK -->
+            <input type="text" v-bind:value="message.value">
+            <!-- OK -->
+            <input type="text" :value="message.value">
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
