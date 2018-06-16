@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <a id="logo" href="#" alt="Company">Company</a>
+        <div id="app">
+            <ul id="menu">
+                <li>★</li>
+            </ul>
+            <full-page :options="options" id="fullpage" ref="fullpage">
+                <div class="section">
+                    <h3>vue-fullpage.js</h3>
+                </div>
+                <div class="section">
+                    <h3>Section 1</h3>
+                </div>
+                <div class="section">
+                    <div class="slide">
+                        <h3>Slide 2.1</h3>
+                    </div>
+                    <div class="slide">
+                        <h3>Slide 2.2</h3>
+                    </div>
+                    <div class="slide">
+                        <h3>Slide 2.3</h3>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3>Section 3</h3>
+                </div>
+                <div class="section">
+                    <h3>Section 4</h3>
+                </div>
+                <div class="section">
+                    <h3>Section 5</h3>
+                </div>
+                <div class="section">
+                    <h3>Section 6</h3>
+                </div>
+                <div class="section">
+                    <h3>Section 7</h3>
+                </div>
+                <div class="section">
+                    <h3>Section 8</h3>
+                </div>
+                <div class="section">
+                    <h3>Section 9</h3>
+                </div>
+            </full-page>
+            <!-- <ul class="actions">
+                <li @click="moveSectionDown" class="actions-button">Down</li>
+                <li @click="moveSectionUp" class="actions-button">Up</li>
+                <li @click="moveTo(2,2)" class="actions-button">MoveTo</li>
+                <li @click="silentMoveTo(2,2)" class="actions-button">Silent Move</li>
+                <li @click="moveSlideRight" class="actions-button">Move right</li>
+                <li @click="moveSlideLeft" class="actions-button">Move lef</li>
+                <li @click="setAutoScrolling(false)" class="actions-button">Set autoScroll</li>
+                <li @click="setFitToSection(false)" class="actions-button">Set fitTo</li>
+                <li @click="setAllowScrolling(false)" class="actions-button">Set allowScroll</li>
+                <li @click="setKeyboardScrolling(false)" class="actions-button">Set keyboardScroll</li>
+                <li @click="setScrollingSpeed(4000)" class="actions-button">setScrollingSpeed</li>
+                <li @click="destroy('all')" class="actions-button">Destroy</li>
+                <li @click="addSection" class="actions-button">Add section</li>
+                <li @click="removeSection" class="actions-button">Remove section</li>
+            </ul> -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+        <script src="https://alvarotrigo.com/vue-fullpage/dist/js/mixin.min.js?v=21"></script>
+        <script src="https://alvarotrigo.com/vue-fullpage/dist/js/build.min.js?v=21"></script>
+        <script src="vue.js"></script>
+    </body>
+</html>
