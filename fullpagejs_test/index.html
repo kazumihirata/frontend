@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>test</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1>
+                <img src="assets/logo.png" alt="🐶">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#dog">🐶</a></li>
+                    <li><a href="#cat">🐱</a></li>
+                    <li><a href="#mouse">🐭</a></li>
+                    <li><a href="#hamutaro">🐹</a></li>
+                    <li><a href="#rabit">🐰</a></li>
+                    <li><a href="#fox">🦊</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="fullpage">
+             <div class="section" data-anchor="dog">
+                <h2>woof woof woof</h2>
+            </div>
+             <div class="section" data-anchor="cat">
+                <h2>meow　meow　meow</h2>
+            </div>
+             <div class="section" data-anchor="mouse">
+                <h2>squeak squeak squeak</h2>
+            </div>
+             <div class="section" data-anchor="hamutaro">
+                <h2>heke heke heke</h2>
+            </div>
+            <div class="section" data-anchor="rabit">
+                <div class="slide" id="slide1">
+                    <h2>boing-boing-boing</h2>
+                </div>
+                <div class="slide" id="slide2">
+                    <h2>buzzing　buzzing　buzzing</h2>
+                </div>
+            </div>
+             <div class="section" data-anchor="fox">
+                <h2>What does the fox say?</h2>
+            </div>
+            <div class="section fp-auto-height" id="section-footer">
+                    <p>Footer</p>
+            </div>
+            <!-- <div id="fp-nav" class="right">
+                <ul>
+                    <li><a href="#dog">🐶</a></li>
+                    <li><a href="#cat">🐱</a></li>
+                    <li><a href="#mouse">🐭</a></li>
+                    <li><a href="#hamutaro">🐹</a></li>
+                    <li><a href="#rabit">🐰</a></li>
+                    <li><a href="#fox">🦊</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="jquery.fullPage.js"></script>
+        <script type="text/javascript" src="my.js"></script>
+    </body>
+</html>
