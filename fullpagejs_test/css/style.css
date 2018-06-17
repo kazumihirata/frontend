@@ -31,6 +31,7 @@ nav {
     float: right;
     margin-top: -10px;
     margin-right: 30px;
+    display: block;
 }
 
 nav ul li {
@@ -71,6 +72,38 @@ nav ul li a {
     text-align: center;
 }
 
+
+/* ========================================
+    メディアクエリ
+========================================= */
+@media screen and (max-width: 768px) {
+    #header {
+        width: 100%;
+        height: 30px;
+        position:fixed;
+        display:block;
+        background: #333;
+        z-index:9;
+        text-align:center;
+        color: #f2f2f2;
+        padding: 20px 0 0 0;
+        top:0px;
+    }
+    #header h1 {
+        width: 100px;
+        height: 39px;
+        margin-top: -20px;
+        float: left;
+    }
+    nav {
+        display: none;
+    }
+    .section h2 {
+        font-size: 25px;
+    }
+}
+
+
 /* ========================================
     メディアクエリ
 ========================================= */
@@ -101,35 +134,5 @@ nav ul li a {
     }
     #section-footer p{
         font-size: 10px;
-    }
-}
-
-/* ========================================
-    メディアクエリ
-========================================= */
-@media screen and (min-width: 768px) {
-    #header {
-        width: 100%;
-        height: 30px;
-        position:fixed;
-        display:block;
-        background: #333;
-        z-index:9;
-        text-align:center;
-        color: #f2f2f2;
-        padding: 20px 0 0 0;
-        top:0px;
-    }
-    #header h1 {
-        width: 100px;
-        height: 39px;
-        margin-top: -20px;
-        float: left;
-    }
-    nav {
-        display: none;
-    }
-    .section h2 {
-        font-size: 25px;
     }
 }
