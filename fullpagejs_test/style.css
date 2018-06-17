@@ -4,7 +4,6 @@
 body {
     color: #4c4b4b;
 }
-
 /* ========================================
     ヘッダー
 ========================================= */
@@ -22,7 +21,7 @@ body {
 }
 
 #header h1 {
-    width: 213px;
+    width: 120px;
     height: 39px;
     margin-top: -10px;
     float: left;
@@ -57,18 +56,6 @@ nav ul li a {
     font-size: 45px;
 }
 
-/* Overwriting fullPage.js tooltip color
-* --------------------------------------- */
-/* .fp-tooltip{
-    color: #AAA;
-}
-#fp-nav span, .fp-slidesNav span{
-    border-color: #AAA;
-}
-#fp-nav li .active span, .fp-slidesNav .active span{
-    background: #AAA;
-} */
-
 /* ========================================
     フッター
 ========================================= */
@@ -82,4 +69,67 @@ nav ul li a {
 }
 #section-footer p{
     text-align: center;
+}
+
+/* ========================================
+    メディアクエリ
+========================================= */
+@media screen and (max-width: 480px) {
+    #header {
+        width: 100%;
+        height: 30px;
+        position:fixed;
+        display:block;
+        background: #333;
+        z-index:9;
+        text-align:center;
+        color: #f2f2f2;
+        padding: 20px 0 0 0;
+        top:0px;
+    }
+    #header h1 {
+        width: 100px;
+        height: 39px;
+        margin-top: -20px;
+        float: left;
+    }
+    nav {
+        display: none;
+    }
+    .section h2 {
+        font-size: 15px;
+    }
+    #section-footer p{
+        font-size: 10px;
+    }
+}
+
+/* ========================================
+    メディアクエリ
+========================================= */
+@media screen and (min-width: 768px) {
+    #header {
+        width: 100%;
+        height: 30px;
+        position:fixed;
+        display:block;
+        background: #333;
+        z-index:9;
+        text-align:center;
+        color: #f2f2f2;
+        padding: 20px 0 0 0;
+        top:0px;
+    }
+    #header h1 {
+        width: 100px;
+        height: 39px;
+        margin-top: -20px;
+        float: left;
+    }
+    nav {
+        display: none;
+    }
+    .section h2 {
+        font-size: 25px;
+    }
 }
